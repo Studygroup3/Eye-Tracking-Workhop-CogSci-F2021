@@ -9,7 +9,7 @@ output: html_document
 ```{r setup, include=FALSE}
 require(knitr)
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
-pacman::p_load(tidyverse, jpeg, grid, lme4, lmerTest, DHARMa, MuMIn)
+pacman::p_load(tidyverse, jpeg, grid, lme4, lmerTest, DHARMa, MuMIn, vroom)
 ```
 
 ## Load the data if necessary

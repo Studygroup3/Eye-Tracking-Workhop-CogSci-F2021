@@ -207,8 +207,8 @@ ggplot(x, aes(PositionX, PositionY)) +
 The fixations do not match the picture very well. Let's fix this problem by flipping the y-axis again:
 
 ```{r}
-Fixations <- Fixations %>% mutate(PositionY_flipped = 1051-PositionY)
-Saccades <- Saccades %>% mutate(StartY_flipped = 1051-StartY, EndY_flipped = 1051-EndY)
+Fixations <- Fixations %>% mutate(PositionY = 1051-PositionY)
+Saccades <- Saccades %>% mutate(StartY = 1051-StartY, EndY = 1051-EndY)
 ```
 
 Now let's plot the picture again: 
@@ -223,7 +223,7 @@ x <-
 
 img <- jpeg::readJPEG('data/stimuli_Foraging/space_capsules.jpg')  
 img <- grid::rasterGrob(img, width=unit(1, "npc"), height = unit(1,"npc"), interpolate = FALSE)
-ggplot(x, aes(PositionX, PositionY_flipped)) +
+ggplot(x, aes(PositionX, PositionY)) +
   annotation_custom(img, xmin = 0, xmax = 1680, ymin = 0, ymax = 1050) +
   geom_point(aes(size = Duration), color = "red") +
   theme_bw()
