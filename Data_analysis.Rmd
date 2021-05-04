@@ -26,7 +26,7 @@ We want to test the hypothesis that eye movements are affected by task structure
 
 ### Hypothesis 1: Longer tail for saccades amplitude in Search (vs Count) condition
 
-We know from the paper that the amplitude of saccades in the searching task has a peculiar frequency distribution with a long tail. This means that most of the saccades have very short amplitued, but few of them have very high amplitude (since our eyes are "hopping" to a new place where we can forage). The same may not be true for the counting task, where we expect there to be less variation in the amplitude of saccades (thus a shorter tail). 
+We know from the paper that the amplitude of saccades in the searching task has a peculiar frequency distribution with a long tail. This means that most of the saccades have very short amplitude, but few of them have very high amplitude (since our eyes are "hopping" to a new place where we can forage). The same may not be true for the counting task, where we expect there to be less variation in the amplitude of saccades (thus a shorter tail). 
 
 Let's start by testing this hypothesis. First of all we plot the density distribution of saccade amplitudes in the two tasks:
 
